@@ -36,21 +36,6 @@ npm test
 yarn test
 ```
 
-## Estrutura principal
-
-src/
-├─ components/
-│ ├─ NovaTarefa/
-│ ├─ ListaDeTarefas/
-│ └─ Item/
-├─ hooks/
-│ └─ useContadorDeTarefas.tsx
-├─ lib/
-│ └─ data/
-│ ---└─ tarefas.js
-└─ app/
----└─ page.tsx
-
 ## O que foi testado
 
 - Componente NovaTarefa (input, botão e submissão)
