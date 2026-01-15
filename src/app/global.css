@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100svh;
+}
+
+body {
+  background-color: rgb(70, 173, 180);
+  
+  display: flex;
+  justify-self: center;
+}

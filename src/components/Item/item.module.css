@@ -2,13 +2,39 @@
   display: flex;
 }
 
+.p {
+  color: rgb(165, 255, 218);
+  text-shadow: 0 0 .2rem rgb(0, 70, 60);
+  
+  font-size: larger;
+
+  margin-right: 1rem;
+
+  transition: color .2s;
+}
+
 .p::before {
-  content: "* ";
+  content: "✱ ";
+}
+
+.p:hover {
+  color: rgb(121, 255, 193);
 }
 
 .button {
   height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0.5rem;
+
+  margin-left: auto;
+  padding: .25rem;
+  align-self: center;
+
+  border: .25rem solid rgba(139, 0, 0, 0.274);
+  border-radius: 5px;
+
+  background-color: rgba(255, 72, 72, 0.363);
+}
+
+.button:hover {
+  
+  background-color: rgba(255, 72, 72, 0.575);
 }
