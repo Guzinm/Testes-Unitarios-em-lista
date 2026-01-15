@@ -1,0 +1,23 @@
+name: Pipeline CI/CD
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch: # habilitar o botao "Run Worldflow" no github actions
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chekout
+        uses: actions/checkout@v5
+
+      - name: Instalar node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Instalar dependenciaas   
+        run: npm install
+
+      - name: Rodar build 
+        run: npm run build
